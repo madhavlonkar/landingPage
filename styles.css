@@ -1,0 +1,369 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#box1 {
+    background-image: url(assets/img/main-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background-attachment: fixed;
+}
+
+.transparent-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 530px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.maincoffee {
+    transform: scale(1.4);
+    transition: all 1s ease-in-out;
+}
+
+.maincoffee:hover {
+    transform: scale(2);
+}
+
+.transparent-box p:first-child {
+    text-align: center;
+    color: white;
+    margin-top: 15%;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 400%;
+    font-style: normal;
+}
+
+.transparent-box p:nth-child(2) {
+    text-align: center;
+    color: rgb(204, 141, 81);
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 180%;
+    font-style: normal;
+}
+
+.transparent-box p:nth-child(3) {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 180%;
+    font-style: normal;
+    animation: traslate 3.5s;
+}
+
+.loc-symbol {
+    color: aliceblue;
+    margin-top: 15%;
+    animation: animation 1s;
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes traslate {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#box2 {
+    background-image: url(assets/img/2ndfinal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 35%;
+    height: 35%;
+    gap: 30px;
+    padding: 50px;
+    margin-left: 50%;
+    margin-bottom: 10%;
+}
+
+.grid-item {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
+
+.grid-item i {
+    font-size: 80px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#box3 {
+    background-image: url(assets/img/3.jpg);
+    background-size: cover;
+    height: 130vh;
+    width: 100%;
+    display: table;
+    background-attachment: fixed;
+}
+
+.dateinfo {
+    position: absolute;
+    top: 260%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    width: 600px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.dateinfo p:first-child {
+    margin-left: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 250%;
+    font-style: normal;
+    color: rgb(43, 99, 43);
+}
+
+.dateinfo p:nth-child(2) {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 130%;
+    font-style: normal;
+    color: rgb(43, 99, 43);
+    letter-spacing: 10%;
+}
+
+.dateinfo img {
+    transition: all 1s ease-in-out;
+}
+
+.dateinfo img:hover {
+    transform: scale(3);
+}
+
+.drinkingAndSmokingArea {
+    position: absolute;
+    top: 260%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    width: 600px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.drinkingAndSmokingArea p:first-child {
+    margin-left: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 250%;
+    font-style: normal;
+    color: rgb(230, 145, 48);
+}
+
+.drinkingAndSmokingArea p:nth-child(2) {
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 130%;
+    font-style: normal;
+    color: rgb(230, 145, 48);
+    letter-spacing: 10%;
+}
+
+.drinkingAndSmokingArea img {
+    transition: all 1s ease-in-out;
+}
+
+.drinkingAndSmokingArea img:hover {
+    transform: scale(2);
+}
+
+#box4 {
+    background-image: url(assets/img/4.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background-attachment: fixed;
+}
+
+.coffeeDate {
+    position: absolute;
+    top: 390%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    width: 600px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.coffeeDate p:first-child {
+    margin-left: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 250%;
+    font-style: normal;
+    color: rgb(43, 99, 43);
+}
+
+.coffeeDate p:nth-child(2) {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 130%;
+    font-style: normal;
+    color: rgb(43, 99, 43);
+    letter-spacing: 10%;
+}
+
+.coffeeDate img {
+    transition: all 1s ease-in-out;
+}
+
+.coffeeDate img:hover {
+    transform: scale(2);
+}
+
+.discount {
+    position: absolute;
+    top: 390%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    width: 600px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.discount p:first-child {
+    margin-left: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 250%;
+    font-style: normal;
+    color: rgb(230, 145, 48);
+}
+
+.discount p:nth-child(2) {
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 130%;
+    font-style: normal;
+    color: rgb(230, 145, 48);
+    letter-spacing: 10%;
+}
+
+.discount img {
+    transition: all 1s ease-in-out;
+}
+
+.discount img:hover {
+    transform: scale(1.5);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (768px and smaller) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20%;
+    }
+    
+    .transparent-box {
+        width: 500px;
+        height: 400px;
+    }
+
+    .discount, .coffeeDate {
+        top: 390%;
+        left: 50%;
+        width: 500px;
+        height: 300px;
+    }
+}
+
+/* For mobile phones (480px and smaller) */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .transparent-box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .grid-item i {
+        font-size: 2em;
+    }
+
+    .grid-item p {
+        font-size: 14px;
+    }
+
+    .discount, .coffeeDate, .dateinfo, .drinkingAndSmokingArea {
+        top: 390%;
+        left: 50%;
+        width: 300px;
+        height: 250px;
+        font-size: 14px;
+    }
+
+    .discount img, .coffeeDate img, .dateinfo img {
+        width: 150px;
+        height: auto;
+    }
+}
